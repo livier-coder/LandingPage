@@ -25,7 +25,7 @@
         $stmt->execute();
 
         $stmt->setFetchMode(PDO::FETCH_ASSOC);
-        echo "<b>Modelo</b>" . "&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp" . "<b>Talla</b>" . "&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp" . "<b>Color</b>" . "&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp" . "<b>Cantidad</b>";
+        echo "<b>Nombre</b>" . "&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp" . "<b>Tipo</b>" . "&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp" . "<b>Viñedo</b>" . "&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp" . "<b>Cantidad</b>";
         echo "<table>";
         foreach($stmt->fetchAll() as $row){
             echo "<tr>";
